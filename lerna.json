@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "independent",
+  "changelogPreset": "angular",
+  "useNx": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": [],
+      "yes": true,
+      "message": "chore: publish packages [skip ci]",
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    }
+  }
+}
