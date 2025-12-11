@@ -3,6 +3,9 @@
   "private": true,
   "module": "index.ts",
   "type": "module",
+  "repository": {
+    "url": "https://github.com/janbiasi/opencode-plugins"
+  },
   "scripts": {
     "build": "bun run --filter \"@opencode-plugins/*\" build",
     "release": "lerna publish --no-commit-hooks --no-private --conventional-commits --create-release github --yes"
