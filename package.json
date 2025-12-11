@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "build": "bun run --filter \"@opencode-plugins/*\" build",
-    "release": "lerna publish --no-commit-hooks --conventional-commits --create-release github --yes"
+    "ci:version": "changeset version && bun update",
+    "ci:publish": "for dir in plugins/*; do (cd \"$dir\" && bun publish || true); done && changeset tag"
   },
   "workspaces": [
     "plugins/*"
   ],
   "devDependencies": {
-    "@types/bun": "latest",
-    "lerna": "^9.0.3"
+    "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"

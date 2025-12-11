@@ -5,7 +5,8 @@
   "author": "Jan Biasi (https://github.com/janbiasi)",
   "description": "Prevent your system from sleeping during agentic workflows.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "dist"

@@ -5,7 +5,8 @@
   "author": "Jan Biasi (https://github.com/janbiasi)",
   "description": "Prevent opencode to read any .env file",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "dist"
