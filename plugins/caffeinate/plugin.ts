@@ -1,5 +1,8 @@
+import { promisify } from "node:util"
+import { exec } from "node:child_process"
 import type { Plugin } from "@opencode-ai/plugin";
 
+const execAsync = promisify(exec);
 
 const commands = {
   caffeinate: {
@@ -13,13 +16,14 @@ const commands = {
 export const CaffeinatePlugin: Plugin = async ({ project, client, $, directory, worktree }) => {
   const kernelInfo = (await $`uname -a`).text.toString().toLowerCase();
   if (!kernelInfo.startsWith("darwin")) {
-    client.tui.showToast({
+    await client.tui.showToast({
       body: {
         title: "Caffeinate not supported",
         message: "Caffeinate currently only works on macOS",
         variant: "warning"
       }
     })
+    return {};
   }
 
   const caffeinateCmds = commands.caffeinate.darwin;
@@ -36,11 +40,10 @@ export const CaffeinatePlugin: Plugin = async ({ project, client, $, directory, 
         case "todo.updated":
         case "session.updated":
         case "message.part.updated":
-        case "lsp.updated":
-          await Promise.all(caffeinateCmds.map(cmd => $`${cmd}`))
+          await Promise.all(caffeinateCmds.map(cmd => execAsync(`${cmd}`)));
           break;
         case "session.idle":
-          await Promise.all(uncaffeinateCmds.map(cmd => $`${cmd}`))
+          await Promise.all(uncaffeinateCmds.map(cmd => execAsync(`${cmd}`)));
           break;
         default:
           break;

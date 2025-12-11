@@ -10,7 +10,9 @@
     },
     "version": {
       "allowBranch": ["main"],
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "ignoreChanges": [],
+      "message": "chore: publish packages to npm registry [skip ci]"
     }
   }
 }
