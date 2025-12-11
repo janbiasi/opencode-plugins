@@ -6,12 +6,13 @@
   "scripts": {
     "build": "bun run --filter \"@opencode-plugins/*\" build",
     "ci:version": "changeset version && bun update",
-    "ci:publish": "for dir in plugins/*; do (cd \"$dir\" && bun publish || true); done && changeset tag"
+    "ci:publish": "for dir in plugins/*; do (cd \"$dir\" && npm publish || true); done && changeset tag"
   },
   "workspaces": [
     "plugins/*"
   ],
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "@types/bun": "latest"
   },
   "peerDependencies": {
