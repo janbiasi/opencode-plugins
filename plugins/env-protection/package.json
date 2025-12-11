@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@opencode-plugins/env-protection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Jan Biasi (https://github.com/janbiasi)",
   "description": "Prevent opencode to read any .env file",
   "publishConfig": {
