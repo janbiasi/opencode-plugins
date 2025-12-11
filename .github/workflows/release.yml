@@ -15,6 +15,7 @@ jobs:
       contents: write
       packages: write
       pull-requests: write
+      attestations: write # required to attest build provenance
 
     steps:
       - name: Checkout
@@ -38,6 +39,11 @@ jobs:
 
       - name: Build packages
         run: bun run build
+
+      - name: Attestation
+        uses: actions/attest-build-provenance@v3
+        with:
+          subject-path: "plugins/*/dist/**"
 
       - name: Configure Git
         run: |
