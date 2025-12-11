@@ -1,0 +1,20 @@
+{
+  "name": "@opencode-plugins/repository",
+  "private": true,
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun run --filter \"@opencode-plugins/*\" build",
+    "release": "lerna publish --no-commit-hooks --conventional-commits --create-release github --yes"
+  },
+  "workspaces": [
+    "plugins/*"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "lerna": "^9.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
