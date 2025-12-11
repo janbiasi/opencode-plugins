@@ -13,5 +13,6 @@
   "devDependencies": {
     "@opencode-ai/plugin": "^1",
     "@types/bun": "latest"
-  }
+  },
+  "gitHead": "2fde1300bc268f054a13af8ee7d2da46498069ac"
 }
