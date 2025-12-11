@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/janbiasi/opencode-plugins/compare/@opencode-plugins/caffeinate@1.1.0...@opencode-plugins/caffeinate@1.1.1) (2025-12-11)
+
+**Note:** Version bump only for package @opencode-plugins/caffeinate
+
+
+
+
+
 # 1.1.0 (2025-12-11)
 
 
