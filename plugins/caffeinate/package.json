@@ -1,15 +1,17 @@
 {
   "type": "module",
   "name": "@opencode-plugins/caffeinate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Jan Biasi (https://github.com/janbiasi)",
   "description": "Prevent your system from sleeping during agentic workflows.",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "bun build plugin.ts --outdir ./dist"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "@opencode-ai/plugin": "^1"
+    "@opencode-ai/plugin": "^1",
+    "@types/bun": "latest"
   }
 }
