@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/janbiasi/opencode-plugins/compare/@opencode-plugins/env-protection@1.0.1...@opencode-plugins/env-protection@1.0.2) (2025-12-11)
+
+
+### Bug Fixes
+
+* move to changesets ([a485d5a](https://github.com/janbiasi/opencode-plugins/commit/a485d5a54f42343348e5320b05afca0d6d4a2463))
+
+
+
+
+
 ## [1.0.1](https://github.com/janbiasi/opencode-plugins/compare/@opencode-plugins/env-protection@1.0.0...@opencode-plugins/env-protection@1.0.1) (2025-12-11)
 
 
