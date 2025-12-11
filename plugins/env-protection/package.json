@@ -4,6 +4,9 @@
   "version": "1.1.2",
   "author": "Jan Biasi (https://github.com/janbiasi)",
   "description": "Prevent opencode to read any .env file",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
@@ -14,5 +17,5 @@
     "@opencode-ai/plugin": "^1",
     "@types/bun": "latest"
   },
-  "gitHead": "94391ebf3b0ab96c998ce57c8901afb09bd30155"
+  "gitHead": "d98e05e15b5fb996b463dab1814f917dd669ed36"
 }
