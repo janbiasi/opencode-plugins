@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "bun run --filter \"@opencode-plugins/*\" build",
-    "release": "lerna publish from-package --no-commit-hooks --conventional-commits --create-release github --yes"
+    "release": "lerna publish --no-commit-hooks --conventional-commits --create-release github --yes"
   },
   "workspaces": [
     "plugins/*"
