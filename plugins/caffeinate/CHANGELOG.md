@@ -8,4 +8,16 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
+* **caffeinate:** use exec instead of bun shell ([9efa69f](https://github.com/janbiasi/opencode-plugins/commit/9efa69fd62429cd71ab7d86d3100adacc1d902e8))
+* remove changelog for initial release ([11b2e61](https://github.com/janbiasi/opencode-plugins/commit/11b2e6176605282f273076e4706e5ae8dbbbd0b8))
+
+
+
+
+
+## [1.0.1](https://github.com/janbiasi/opencode-plugins/compare/@opencode-plugins/caffeinate@1.0.0...@opencode-plugins/caffeinate@1.0.1) (2025-12-11)
+
+
+### Bug Fixes
+
 * remove changelog for initial release ([11b2e61](https://github.com/janbiasi/opencode-plugins/commit/11b2e6176605282f273076e4706e5ae8dbbbd0b8))
